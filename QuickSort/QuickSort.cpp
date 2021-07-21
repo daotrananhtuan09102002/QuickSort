@@ -7,8 +7,8 @@ void QuickSort(int*& a, int l, int r)
 	int p = a[(l + r) / 2];
 	while (i < j)
 	{
-		while (a[i] < p) i++;
-		while (a[j] > p) j--;
+		while (a[i] < p) i++; //    >
+		while (a[j] > p) j--; //    <
 		if (i <= j)
 		{
 			swap(a[i], a[j]);
